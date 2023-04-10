@@ -45,6 +45,9 @@ if user_inpt == dict.get(key):
 else:
     print("Incorrect, the answer is: " + dict.get(key))
 
+if x not exists:
+    pass
+
 
 
 
