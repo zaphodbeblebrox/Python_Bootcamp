@@ -1,0 +1,37 @@
+Create 3 Dojos: 
+
+SELECT * FROM dojos_and_ninjas.dojos;
+insert into dojos (name) values ("Khan Academy"), ("Coding Dojo"), ("The New Boston");
+
+--------------------------
+Delete 3 dojos:
+
+delete from dojos;
+
+--------------------------
+Create 3 Dojos: 
+
+SELECT * FROM dojos_and_ninjas.dojos;
+insert into dojos (name) values ("Khan Academy"), ("Coding Dojo"), ("The New Boston");
+
+--------------------------
+Entries into Ninjas:
+
+insert into ninjas (first_name, last_name, age, dojo_id) values ("bob", "builder", 28, 10),("Kitty", "Pride", 24, 10),("logan", "howlett", 96, 10);
+insert into ninjas (first_name, last_name, age, dojo_id) values ("steve", "blocks", 32, 11),("alex", "bloxs", 35, 11),("gandolf", "the grey", 6000, 11);
+insert into ninjas (first_name, last_name, age, dojo_id) values ("mumen", "rider", 24, 12),("Wade", "Wilson", 42, 12),("winry", "rockbell", 19, 12);
+
+--------------------------
+Query: Retrieve all the ninjas from the first dojo:
+
+select * from ninjas where dojo_id = 10;
+
+--------------------------
+Query: Retrieve all the ninjas from the last dojo:
+
+select * from ninjas where dojo_id = 12;
+
+--------------------------
+Query: Retrieve last ninjas dojo:
+
+select dojo_id from ninjas order by id desc limit 1;
